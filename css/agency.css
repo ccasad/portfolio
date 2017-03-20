@@ -759,3 +759,7 @@ body {
 .carousel {
   margin-bottom: 40px;
 }
+.profile-img {
+  margin-bottom: 25px;
+  border-radius: 50%;
+}
