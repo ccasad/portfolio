@@ -93,8 +93,8 @@
                     <h3 class="section-subheading text-muted">"Go that way, really fast. If something gets in your way, turn."<br/>-- C. De Mar</h3>
                 </div>
             </div>
-            <div class="row">
-                <div data-ng-repeat="project in portfolio.projects track by $index" class="col-md-4 col-sm-4 portfolio-item">
+            <div class="row" data-ng-repeat="rows in portfolio.projectChunks">
+                <div data-ng-repeat="project in rows" class="col-md-4 col-sm-4 portfolio-item">
                     <a href="#portfolioModal" class="portfolio-link" data-ng-click="portfolio.selectedProject=project" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
